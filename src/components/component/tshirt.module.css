@@ -14,11 +14,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    
   }
   
   .carousel .control-dots .dot {
-    background: #000000;
+    background: #fff;
     border: 2px solid #000;
     width: 14px;
     height: 14px;
@@ -48,6 +47,5 @@
   .container .text-center p {
     font-size: 1rem;
     color: #ddd;
-
   }
   

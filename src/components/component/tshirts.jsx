@@ -1,23 +1,28 @@
+// src/components/component/tshirt.jsx
+
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import styles from './tshirt.module.css';
+import styles from './tshirt.module.css'; // Importando o CSS personalizado
 
 export default function TShirts() {
   return (
     <main className="flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 via-gray-900 to-black">
       <section className="container py-12 md:py-20">
-        <div className="flex flex-col items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold text-white">T-Shirts</h2>
+        <div className="w-full flex flex-col items-center justify-between mb-8">
+          <Link href="/shop" className="text-primary hover:underline text-white mb-4 self-start">
+            &larr; Voltar para a loja
+          </Link>
+          <h2 className="text-3xl font-bold text-white text-center">T-Shirts</h2>
         </div>
         <Carousel
           showThumbs={false}
           autoPlay
           infiniteLoop
-          interval={2000}
+          interval={3000}  // Intervalo ajustado para 3 segundos
           showStatus={false}
-          showIndicators={true}
+          showIndicators={true}  // Mostrar indicadores (bolinhas)
           className={styles.carousel}
         >
           <div className="flex justify-center p-4 gap-4">
@@ -135,42 +140,6 @@ export default function TShirts() {
             />
             <h3 className="text-xl font-bold">TRICOT SUFGANG YING YANG BLACK</h3>
             <p className="text-lg text-white">R$ 349,90</p>
-          </div>
-          <div className="text-center">
-            <img
-              src="/placeholder.svg"
-              alt="TEE SUFGANG STUNT MASTER GREY"
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">TEE SUFGANG STUNT MASTER GREY</h3>
-            <p className="text-lg text-white">R$ 189,90</p>
-          </div>
-          <div className="text-center">
-            <img
-              src="/placeholder.svg"
-              alt="TEE SUFGANG STUNT MASTER GREY"
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">TEE SUFGANG STUNT MASTER GREY</h3>
-            <p className="text-lg text-white">R$ 189,90</p>
-          </div>
-          <div className="text-center">
-            <img
-              src="/placeholder.svg"
-              alt="TEE SUFGANG STUNT MASTER GREY"
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">TEE SUFGANG STUNT MASTER GREY</h3>
-            <p className="text-lg text-white">R$ 189,90</p>
-          </div>
-          <div className="text-center">
-            <img
-              src="/placeholder.svg"
-              alt="TEE SUFGANG STUNT MASTER GREY"
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">TEE SUFGANG STUNT MASTER GREY</h3>
-            <p className="text-lg text-white">R$ 189,90</p>
           </div>
           <div className="text-center">
             <img
