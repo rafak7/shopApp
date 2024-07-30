@@ -6,8 +6,11 @@ import { Card } from "@/components/ui/card";
 
 export default function Shop() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black">
-      <main className="flex-1 flex flex-col items-center justify-center">
+    <div className="relative flex flex-col min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black">
+      <Link href="/cart" legacyBehavior>
+        <a className="absolute top-4 right-4 bg-primary text-white py-2 px-4 rounded">Carrinho</a>
+      </Link>
+      <main className="flex-1 flex flex-col items-center justify-center pt-16">
         <section className="bg-muted py-12 md:py-20 w-full">
           <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
@@ -31,42 +34,31 @@ export default function Shop() {
         <section className="container mx-auto py-12 md:py-20">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold text-white">Shop by Category</h2>
-            <Link href="#" className="text-primary hover:underline" prefetch={false}>
-              View All
-            </Link>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <Link
-              href="/tshirt"
-              className="bg-background rounded-lg p-4 flex flex-col items-center gap-2 hover:shadow-lg transition-shadow"
-              prefetch={false}
-            >
-              <img src="/images/nocnike.jpg" width={80} height={80} alt="T-Shirts" className="rounded-full" />
-              <span className="text-lg font-medium text-white">T-Shirts</span>
+            <Link href="/tshirt" legacyBehavior>
+              <a className="bg-background rounded-lg p-4 flex flex-col items-center gap-2 hover:shadow-lg transition-shadow">
+                <img src="/images/nocnike.jpg" width={80} height={80} alt="T-Shirts" className="rounded-full" />
+                <span className="text-lg font-medium text-white">T-Shirts</span>
+              </a>
             </Link>
-            <Link
-              href="/hoodies"
-              className="bg-background rounded-lg p-4 flex flex-col items-center gap-2 hover:shadow-lg transition-shadow"
-              prefetch={false}
-            >
-              <img src="/images/nocjaq.webp" width={80} height={80} alt="Hoodies" className="rounded-full" />
-              <span className="text-lg font-medium text-white">Hoodies</span>
+            <Link href="/hoodies" legacyBehavior>
+              <a className="bg-background rounded-lg p-4 flex flex-col items-center gap-2 hover:shadow-lg transition-shadow">
+                <img src="/images/nocjaq.webp" width={80} height={80} alt="Hoodies" className="rounded-full" />
+                <span className="text-lg font-medium text-white">Hoodies</span>
+              </a>
             </Link>
-            <Link
-              href="/pants"
-              className="bg-background rounded-lg p-4 flex flex-col items-center gap-2 hover:shadow-lg transition-shadow"
-              prefetch={false}
-            >
-              <img src="/images/calcanoc.webp" width={80} height={80} alt="Pants" className="rounded-full" />
-              <span className="text-lg font-medium text-white">Pants</span>
+            <Link href="/pants" legacyBehavior>
+              <a className="bg-background rounded-lg p-4 flex flex-col items-center gap-2 hover:shadow-lg transition-shadow">
+                <img src="/images/calcanoc.webp" width={80} height={80} alt="Pants" className="rounded-full" />
+                <span className="text-lg font-medium text-white">Pants</span>
+              </a>
             </Link>
-            <Link
-              href="/accessories"
-              className="bg-background rounded-lg p-4 flex flex-col items-center gap-2 hover:shadow-lg transition-shadow"
-              prefetch={false}
-            >
-              <img src="/images/bonenoc.webp" width={80} height={80} alt="Accessories" className="rounded-full" />
-              <span className="text-lg font-medium text-white">Accessories</span>
+            <Link href="#" legacyBehavior>
+              <a className="bg-background rounded-lg p-4 flex flex-col items-center gap-2 hover:shadow-lg transition-shadow">
+                <img src="/images/bonenoc.webp" width={80} height={80} alt="Accessories" className="rounded-full" />
+                <span className="text-lg font-medium text-white">Accessories</span>
+              </a>
             </Link>
           </div>
         </section>
@@ -74,69 +66,77 @@ export default function Shop() {
           <div className="container mx-auto">
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-3xl font-bold text-white">New Arrivals</h2>
-              <Link href="#" className="text-primary hover:underline" prefetch={false}>
-                View All
+              <Link href="#" legacyBehavior>
+                <a className="text-primary hover:underline">View All</a>
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               <Card className="bg-background rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <Link href="#" className="block" prefetch={false}>
-                  <img
-                    src="/placeholder.svg"
-                    width={400}
-                    height={500}
-                    alt="Product 1"
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="p-4">
-                    <h3 className="text-xl font-bold">Streetwear Hoodie</h3>
-                    <p className="text-muted-foreground">$59.99</p>
-                  </div>
+                <Link href="#" legacyBehavior>
+                  <a className="block">
+                    <img
+                      src="/placeholder.svg"
+                      width={400}
+                      height={500}
+                      alt="Product 1"
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="p-4">
+                      <h3 className="text-xl font-bold">Streetwear Hoodie</h3>
+                      <p className="text-muted-foreground">$59.99</p>
+                    </div>
+                  </a>
                 </Link>
               </Card>
               <Card className="bg-background rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <Link href="#" className="block" prefetch={false}>
-                  <img
-                    src="/placeholder.svg"
-                    width={400}
-                    height={500}
-                    alt="Product 2"
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="p-4">
-                    <h3 className="text-xl font-bold">Graphic Tee</h3>
-                    <p className="text-muted-foreground">$29.99</p>
-                  </div>
+                <Link href="#" legacyBehavior>
+                  <a className="block">
+                    <img
+                      src="/placeholder.svg"
+                      width={400}
+                      height={500}
+                      alt="Product 2"
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="p-4">
+                      <h3 className="text-xl font-bold">Graphic Tee</h3>
+                      <p className="text-muted-foreground">$29.99</p>
+                    </div>
+                  </a>
                 </Link>
               </Card>
               <Card className="bg-background rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <Link href="#" className="block" prefetch={false}>
-                  <img
-                    src="/placeholder.svg"
-                    width={400}
-                    height={500}
-                    alt="Product 3"
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="p-4">
-                    <h3 className="text-xl font-bold">Cargo Pants</h3>
-                    <p className="text-muted-foreground">$49.99</p>
-                  </div>
+                <Link href="#" legacyBehavior>
+                  <a className="block">
+                    <img
+                      src="/placeholder.svg"
+                      width={400}
+                      height={500}
+                      alt="Product 3"
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="p-4">
+                      <h3 className="text-xl font-bold">Cargo Pants</h3>
+                      <p className="text-muted-foreground">$49.99</p>
+                    </div>
+                  </a>
                 </Link>
               </Card>
               <Card className="bg-background rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <Link href="#" className="block" prefetch={false}>
-                  <img
-                    src="/placeholder.svg"
-                    width={400}
-                    height={500}
-                    alt="Product 4"
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="p-4">
-                    <h3 className="text-xl font-bold">Snapback Cap</h3>
-                    <p className="text-muted-foreground">$19.99</p>
-                  </div>
+                <Link href="#" legacyBehavior>
+                  <a className="block">
+                    <img
+                      src="/placeholder.svg"
+                      width={400}
+                      height={500}
+                      alt="Product 4"
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="p-4">
+                      <h3 className="text-xl font-bold">Snapback Cap</h3>
+                      <p className="text-muted-foreground">$19.99</p>
+                    </div>
+                  </a>
                 </Link>
               </Card>
             </div>
