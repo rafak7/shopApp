@@ -7,12 +7,14 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Button } from "@/components/ui/button";
 
 const products = [
-  { id: 1, name: "Graphic Tee", price: "$29.99", image: "/placeholder.svg", description: "A cool graphic tee." },
-  { id: 2, name: "Striped Tee", price: "$24.99", image: "/placeholder.svg", description: "A stylish striped tee." },
-  { id: 3, name: "Oversized Tee", price: "$34.99", image: "/placeholder.svg", description: "A comfortable oversized tee." },
-  { id: 4, name: "Vintage Tee", price: "$19.99", image: "/placeholder.svg", description: "A vintage style tee." },
-  { id: 5, name: "Vintage Tee", price: "$19.99", image: "/placeholder.svg", description: "A vintage style tee." },
-  { id: 6, name: "Vintage Tee", price: "$19.99", image: "/placeholder.svg", description: "A vintage style tee." }
+  { id: 1, name: "JAQUETA NYLON 2XONÇA", price: "R$329.99", image: "/images/survival1.webp", description: "A cool graphic tee." },
+  { id: 2, name: "JAQUETA NYLON 2XONÇA", price: "R$324.99", image: "/images/survival2.webp", description: "A stylish striped tee." },
+  { id: 3, name: "MANGA-LONGA SPRAY LOGO", price: "R$234.99", image: "/images/survival3.webp", description: "A comfortable oversized tee." },
+  { id: 4, name: "MANGA-LONGA GUERRA", price: "$199.99", image: "/images/survival4.webp", description: "A vintage style tee." },
+  { id: 5, name: "CAMISETA RED ONÇA", price: "$199.99", image: "/images/survival5.webp" , description: "A vintage style tee." },
+  { id: 6, name: "CAMISETA ONÇA LOGO", price: "$199.99", image: "/images/survival6.webp", description: "A vintage style tee." },
+  { id: 7, name: "CAMISETA SURVIVAL RECORDS", price: "$199.99", image: "/images/survival7.webp", description: "A vintage style tee." },
+  { id: 8, name: "CAMISETA SPRAY LOGO SWAG", price: "$199.99", image: "/images/survival8.webp", description: "A vintage style tee." }
 ];
 
 const ProductDetails = () => {

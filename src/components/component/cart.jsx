@@ -20,7 +20,7 @@ export default function Cart() {
 
   const calculateTotal = () => {
     return cartItems.reduce((total, item) => {
-      const price = parseFloat(item.price.replace('$', '').replace('R$', '').replace(',', '.'));
+      const price = parseFloat(item.price.replace('R$', '').replace('R$', '').replace(',', '.'));
       return total + price;
     }, 0).toFixed(2);
   };

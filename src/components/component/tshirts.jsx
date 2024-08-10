@@ -21,12 +21,14 @@ export default function TShirts() {
   };
 
   const items = [
-    { id: 1, name: "Graphic Tee", price: "$29.99", image: "/placeholder.svg" },
-    { id: 2, name: "Striped Tee", price: "$24.99", image: "/placeholder.svg" },
-    { id: 3, name: "Oversized Tee", price: "$34.99", image: "/placeholder.svg" },
-    { id: 4, name: "Vintage Tee", price: "$19.99", image: "/placeholder.svg" },
-    { id: 5, name: "Vintage Tee", price: "$19.99", image: "/placeholder.svg" },
-    { id: 6, name: "Vintage Tee", price: "$19.99", image: "/placeholder.svg" }
+    { id: 1, name: "JAQUETA NYLON 2XONÇA", price: "R$329.99", image: "/images/survival1.webp" },
+    { id: 2, name: "JAQUETA NYLON 2XONÇA", price: "R$324.99", image: "/images/survival2.webp" },
+    { id: 3, name: "MANGA-LONGA SPRAY LOGO", price: "R$234.99", image: "/images/survival3.webp" },
+    { id: 4, name: "MANGA-LONGA GUERRA", price: "R$199.99", image: "/images/survival4.webp" },
+    { id: 5, name: "CAMISETA RED ONÇA", price: "R$199.99", image: "/images/survival5.webp" },
+    { id: 6, name: "CAMISETA ONÇA LOGO", price: "R$199.99", image: "/images/survival6.webp" },
+    { id: 7, name: "CAMISETA SURVIVAL RECORDS", price: "R$199.99", image: "/images/survival7.webp" },
+    { id: 8, name: "CAMISETA SPRAY LOGO SWAG", price: "R$199.99", image: "/images/survival8.webp" }
   ];
 
   // Dividir os itens em grupos de 3 para o carrossel
